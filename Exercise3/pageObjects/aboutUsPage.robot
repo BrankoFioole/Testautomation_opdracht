@@ -2,7 +2,7 @@
 Resource  basePage.robot
 
 *** Variables ***
-${ABOUTUS_TXT}=       css:#center_column > div > div > div:nth-child(1) > div
+${ABOUTUS_TXT}=       xpath://a[@class='smartphones']
 
 *** Keywords ***
 Get About Us Text
