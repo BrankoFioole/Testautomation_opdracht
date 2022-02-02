@@ -10,22 +10,12 @@ Test Setup  Go To Signin Page
 Login Without Email Address
     Log In With Account
     ${errorMessage}=  Get Login Error Message
-    Should Contain  ${errorMessage}  An email address required.
-
-Login With Invalid Email Address
-    Log In With Account  INVALID  password
-    ${errorMessage}=  Get Login Error Message
-    Should Contain  ${errorMessage}  Invalid email address.
+    Should Contain  ${errorMessage}  Username is required
 
 Login With Unexisting Account
     Log In With Account  notanaccount@gmail.com  password
     ${errorMessage}=  Get Login Error Message
-    Should Contain  ${errorMessage}  Authentication failed.
-
-Login With Short Password
-    Log In With Account  notanaccount@gmail.com  pw
-    ${errorMessage}=  Get Login Error Message
-    Should Contain  ${errorMessage}  Invalid password.
+    Should Contain  ${errorMessage}  A user could not be found with this email address
 
 Login Without Password
     Log In With Account  notanaccount@gmail.com

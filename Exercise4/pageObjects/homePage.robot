@@ -2,7 +2,7 @@
 Resource  basePage.robot
 
 *** Variables ***
-${SIGNIN_LNK}=       css:.header_user_info > a
+${SIGNIN_LNK}=       xpath://a[normalize-space()='My Account']
 
 *** Keywords ***
 Go To Signin Page
