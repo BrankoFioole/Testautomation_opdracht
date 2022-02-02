@@ -2,10 +2,15 @@
 Resource  basePage.robot
 
 *** Variables ***
-${SIGNIN_LNK}=       css:.header_user_info > a
-${ABOUTUS_LNK}=      css:[title='About us']
+${ACCEPT_COOKIES}=    css:[title="Ja, ik accepteer cookies"]
+${ABOUTUS_TXT}=       xpath://a[@class='smartphones']
 
 *** Keywords ***
 
 Go To Home
-    Click Element  css:[title="Ja, ik accepteer cookies"]
+    Click Element  ${ACCEPT_COOKIES}
+
+Get Smartphones text
+    Wait Until Element Is Visible  ${ABOUTUS_TXT}
+    ${text}=  Get Text  ${ABOUTUS_TXT}
+    [Return]  ${text}
