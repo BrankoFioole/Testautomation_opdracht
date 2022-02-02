@@ -11,6 +11,7 @@ Suite Teardown  Close browser
 *** Test Cases ***
 
 Test About Us Page Contains Expected Text
-    Click Element  css:[title="Ja, ik accepteer cookies"]
-    ${text}=  Get Text  xpath://a[@class='smartphones']
-    Should Contain  ${text}  smartphones
+    Go To Home
+    ${text}=  Get Smartphones text
+    Should Contain  ${text}  Beste smartphones
+

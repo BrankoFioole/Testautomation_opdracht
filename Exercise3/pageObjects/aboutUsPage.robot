@@ -5,7 +5,7 @@ Resource  basePage.robot
 ${ABOUTUS_TXT}=       xpath://a[@class='smartphones']
 
 *** Keywords ***
-Get About Us Text
+Get Smartphones text
     Wait Until Element Is Visible  ${ABOUTUS_TXT}
     ${text}=  Get Text  ${ABOUTUS_TXT}
     [Return]  ${text}
