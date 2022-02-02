@@ -1,7 +1,6 @@
 *** Settings ***
 Resource  ../pageObjects/basePage.robot
 Resource  ../pageObjects/homePage.robot
-Resource  ../pageObjects/aboutUsPage.robot
 
 Suite Setup  Open My Website
 Suite Teardown  Close browser
