@@ -2,7 +2,7 @@
 Resource  basePage.robot
 
 *** Variables ***
-${ACCEPT_COOKIES}=    css:[title="Ja, ik accepteer cookies"]
+${ACCEPT_COOKIES}=    xpath://*[@id="koekieBar"]/div[1]/div[2]/button[1]
 ${ABOUTUS_TXT}=       xpath://a[@class='smartphones']
 
 *** Keywords ***
