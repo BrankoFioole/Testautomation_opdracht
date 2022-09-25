@@ -9,7 +9,7 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test About Us Page Contains Expected Text
+Test Home Page Contains Expected Text
     Go To Home
     ${text}=  Get Smartphones text
     Should Contain  ${text}  Beste smartphones
