@@ -9,7 +9,7 @@ Suite Teardown  Close browser
 *** Test Cases ***
 
 Selenium Test Locate And Interact
-    Click Element  css:[title="Ja, ik accepteer cookies"]
+    Click Element  xpath://*[@id="koekieBar"]/div[1]/div[2]/button[1]
     Sleep  5s
 
 Selenium Test Locate And Interact True
