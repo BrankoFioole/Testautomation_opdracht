@@ -10,16 +10,9 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Home Page Contains Expected Text
-    Go To Home
-    ${text}=  Get Smartphones text
-    Should Contain  ${text}  Beste smartphones
-    Sleep  2s
-
-
 Test About Us Page
+    Go To Home
     Go To About Us
-    Sleep  2s
     ${text}=  Get About Us Text
     Should Contain  ${text}  Zo helpen we je om te kiezen en het maximale uit je aankoop te halen.
 
