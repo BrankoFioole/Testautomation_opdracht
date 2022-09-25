@@ -2,15 +2,15 @@
 Resource  basePage.robot
 
 *** Variables ***
-${ABOUTUS}=           css:ul[class='bulletSeparatedList'] li:nth-child(4) a:nth-child(1)
+${ABOUTUS}=           xpath://*[@id="about"]/ul[1]/li[4]/a
 ${ABOUTUS_TXT}=       xpath://p[contains(text(),'onafhankelijke expert')]
 
 *** Keywords ***
 
 Go To About Us
-    Click Element  ${ABOUTUS}
+    Click Link  ${ABOUTUS}
+    Wait Until Element Is Visible  ${ABOUTUS_TXT}
 
 Get About Us Text
-    Wait Until Element Is Visible  ${ABOUTUS_TXT}
     ${text}=  Get Text  ${ABOUTUS_TXT}
     [Return]  ${text}
