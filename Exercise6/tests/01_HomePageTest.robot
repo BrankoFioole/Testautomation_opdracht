@@ -1,6 +1,7 @@
 *** Settings ***
 Resource  ../pageObjects/basePage.robot
 Resource  ../pageObjects/homePage.robot
+Resource  ../pageObjects/signinPage.robot
 
 Suite Setup  Open My Website
 Suite Teardown  Close browser
@@ -9,9 +10,10 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Home Page Contains Expected Text
-    Go To Home
-    ${text}=  Get Smartphones text
-    Should Contain  ${text}  Beste smartphones
+Test Can Go To Signin Page
+   Go To Home
+   Click Signup Button
+   Should Contain Signin Email Input
+
 
 

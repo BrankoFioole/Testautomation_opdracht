@@ -8,6 +8,9 @@ ${PHONES}=       xpath://a[@class='smartphones']
 *** Keywords ***
 
 Go To Home
+    Delete All Cookies
+    Go To  ${BASE_URL}
+    Wait Until Element Is Visible  ${ACCEPT_COOKIES}
     Click Element  ${ACCEPT_COOKIES}
     Wait Until Element Is Not Visible  ${ACCEPT_COOKIES}
 
