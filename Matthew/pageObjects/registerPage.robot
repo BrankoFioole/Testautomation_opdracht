@@ -14,9 +14,9 @@ ${JOINUS_BUTTON}=  id:RegisterButtonComplete
 
 Register Profile
   Wait Until Element Is Visible  ${SIGNUP_DIV}
-  Input Text  ${FIRSTNAME}  testVoorNaam
-  Input Text  ${LASTNAME}  testAchterNaam
-  Input Text  ${EMAIL}  testEmail@gmail.com
+  Input Text  ${FIRSTNAME}  ${FIRSTNAME_GEGEVENS}
+  Input Text  ${LASTNAME}  ${LASTNAME_GEGEVENS}
+  Input Text  ${EMAIL}  ${EMAIL_GEGEVENS}
   Input Password  ${PASSWORD}  TestPassword1
   Input Password  ${REPASSWORD}  TestPassword1
   Click Element  ${JOINUS_BUTTON}

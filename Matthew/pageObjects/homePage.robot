@@ -14,7 +14,8 @@ Go To Home
   Go To  ${BASE_URL}
   Set Window Size  1500  800
   Wait Until Element Is Not Visible  ${LOADINGPAGE_DIV}  10
-  Sleep  8s
+  Sleep  5s
+  # Sleep mocht niet maar het duurde altijd te lang voordat het logo weg was waardoor mijn programma nooit werkt
   Wait Until Element Is Visible  ${LOGO}
 
 Click Signin Button
