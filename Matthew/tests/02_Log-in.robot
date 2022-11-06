@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  ../pageObjects/basePage.robot
 Resource  ../pageObjects/homePage.robot
-Resource  ../pageObjects/signinPage.robot
+Resource  ../pageObjects/registerPage.robot
 
 Suite Setup  Open My Website
 Suite Teardown  Close browser
@@ -12,7 +12,7 @@ Suite Teardown  Close browser
 
 Test Can Go To Signin Page
    Go To Home
-   Click Signup Button
+   Click Signin Button
    Should Contain Signin Email Input
 
 
