@@ -17,10 +17,10 @@ Register Profile
   Input Text  ${FIRSTNAME}  ${FIRSTNAME_GEGEVENS}
   Input Text  ${LASTNAME}  ${LASTNAME_GEGEVENS}
   Input Text  ${EMAIL}  ${EMAIL_GEGEVENS}
-  Input Password  ${PASSWORD}  TestPassword1
-  Input Password  ${REPASSWORD}  TestPassword1
+  Input Password  ${PASSWORD}  YBB4$M0eQMoa
+  Input Password  ${REPASSWORD}  YBB4$M0eQMoa
   Click Element  ${JOINUS_BUTTON}
   Wait Until Element Is Not Visible  ${JOINUS_BUTTON}
-  Wait Until Element Is Visible  ${COMEDY_MOVIES_DIV}
+  Wait Until Element Is Visible  ${LOGIN_DIV}
 
   
