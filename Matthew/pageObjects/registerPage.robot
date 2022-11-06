@@ -21,5 +21,6 @@ Register Profile
   Input Password  ${REPASSWORD}  TestPassword1
   Click Element  ${JOINUS_BUTTON}
   Wait Until Element Is Not Visible  ${JOINUS_BUTTON}
+  Wait Until Element Is Visible  ${COMEDY_MOVIES_DIV}
 
   
