@@ -10,10 +10,12 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Can Go To Signin Page
-   Go To Home
-   Click Signup Button
-   Should Contain Signin Email Input
+Test Can Add Credits
+  Go To Home
+  Click Signin Button
+  Login Profile
+  Go To ProfilePage
+  Add Credits
 
 
 

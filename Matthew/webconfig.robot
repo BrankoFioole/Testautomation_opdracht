@@ -6,5 +6,5 @@ ${FIRSTNAME_GEGEVENS}=      test96357657
 ${LASTNAME_GEGEVENS}=       test96357657AchterNaam
 ${COMEDY_MOVIES_DIV}=  class:css-nlgfro
 ${LOGIN_DIV}=  xpath://*[@id="SignIn"]/div/form/div[1]
-${PROFILEPAGE_BUTTON}=  id:OrdersPageButton
-${ADDCREDITS_BUTTON}=  class:css-17ylx6u
+${PROFILEPAGE_BUTTON}=  class:css-17ylx6u
+${ADDCREDITS_BUTTON}=  class:css-1e9674f
