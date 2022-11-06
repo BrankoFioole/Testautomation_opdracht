@@ -2,8 +2,6 @@
 Resource  basePage.robot
 
 *** Variables ***
-${NAV}=  id:nav
-${LOGO}=  id:Logo
 ${LOADINGPAGE_DIV}=  xpath://*[@id="root"]/div/div[2]/img[contains(@src,'./static/media/Icon_Brightest.0c054a22.png')]
 ${SIGNIN_BUTTON}=  id:SignInButton
 ${REGISTER_BUTTON}=  id:RegisterButton
@@ -26,3 +24,6 @@ Click Register Button
   Wait Until Element Is Visible  ${REGISTER_BUTTON}
   Click Element  ${REGISTER_BUTTON}
 
+Click Logo
+  Click Element  ${LOGO}
+  Wait Until Element Is Visible  ${COMEDY_MOVIES_DIV}

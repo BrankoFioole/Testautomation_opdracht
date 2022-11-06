@@ -1,6 +1,7 @@
 *** Variables ***
 ${BROWSER}=     Google Chrome
 ${BASE_URL}=    https://brightshopapp.herokuapp.com/\#/
+${LOGO}=  id:Logo
 ${EMAIL_GEGEVENS}=      test96357657@gmail.com
 ${FIRSTNAME_GEGEVENS}=      test96357657
 ${LASTNAME_GEGEVENS}=       test96357657AchterNaam
