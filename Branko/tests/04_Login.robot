@@ -9,7 +9,7 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Go To SignIn
+Login Test
     Go To Home
     Click Signup Button
-
+    Put Login

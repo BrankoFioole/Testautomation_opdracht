@@ -1,94 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221012 13:58:10.154" rpa="false" schemaversion="3">
-<suite id="s1" name="Tests" source="C:\Users\brank\OneDrive\Documents\School\Testing\opdracht_automatisation\Branko\tests">
-<suite id="s1-s1" name="01 Profiel Buy Credits" source="C:\Users\brank\OneDrive\Documents\School\Testing\opdracht_automatisation\Branko\tests\01_Profiel_Buy_Credits.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221106 16:04:00.584" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests">
+<suite id="s1-s1" name="01 Profiel Buy Credits" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests\01_Profiel_Buy_Credits.robot">
 <kw name="Open My Website" library="basePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221012 13:58:10.384" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
-<status status="PASS" starttime="20221012 13:58:10.383" endtime="20221012 13:58:12.013"/>
+<msg timestamp="20221106 16:04:00.803" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221106 16:04:00.802" endtime="20221106 16:04:03.812"/>
 </kw>
-<status status="PASS" starttime="20221012 13:58:10.383" endtime="20221012 13:58:12.013"/>
+<status status="PASS" starttime="20221106 16:04:00.802" endtime="20221106 16:04:03.812"/>
 </kw>
-<test id="s1-s1-t1" name="Test Buy Credits" line="12">
+<test id="s1-s1-t1" name="Test Go To SignIn" line="12">
 <kw name="Go To Home" library="homePage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${BASE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221012 13:58:12.016" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
-<status status="PASS" starttime="20221012 13:58:12.015" endtime="20221012 13:58:12.091"/>
+<msg timestamp="20221106 16:04:03.814" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221106 16:04:03.813" endtime="20221106 16:04:03.958"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1500</arg>
 <arg>800</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20221012 13:58:12.091" endtime="20221012 13:58:12.210"/>
+<status status="PASS" starttime="20221106 16:04:03.959" endtime="20221106 16:04:04.082"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${NAV}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221012 13:58:12.211" endtime="20221012 13:58:12.325"/>
+<status status="PASS" starttime="20221106 16:04:04.082" endtime="20221106 16:04:04.525"/>
 </kw>
-<status status="PASS" starttime="20221012 13:58:12.015" endtime="20221012 13:58:12.325"/>
+<status status="PASS" starttime="20221106 16:04:03.813" endtime="20221106 16:04:04.525"/>
 </kw>
 <kw name="Click Signup Button" library="homePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SIGNIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221012 13:58:12.326" endtime="20221012 13:58:12.361"/>
+<status status="PASS" starttime="20221106 16:04:04.526" endtime="20221106 16:04:04.548"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>${LOADINGPAGE}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221012 13:58:12.361" endtime="20221012 13:58:17.417"/>
+<status status="PASS" starttime="20221106 16:04:04.548" endtime="20221106 16:04:09.642"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 13:58:17.417" level="INFO">Clicking element 'id:SignInButton'.</msg>
-<status status="PASS" starttime="20221012 13:58:17.417" endtime="20221012 13:58:17.474"/>
+<msg timestamp="20221106 16:04:09.642" level="INFO">Clicking element 'id:SignInButton'.</msg>
+<status status="PASS" starttime="20221106 16:04:09.642" endtime="20221106 16:04:09.758"/>
 </kw>
-<status status="PASS" starttime="20221012 13:58:12.326" endtime="20221012 13:58:17.475"/>
+<status status="PASS" starttime="20221106 16:04:04.526" endtime="20221106 16:04:09.758"/>
 </kw>
-<kw name="Put in Email" library="homePage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${EMAIL}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221012 13:58:17.477" endtime="20221012 13:58:17.499"/>
-</kw>
-<kw name="Input Email">
-<arg>${EMAIL}</arg>
-<arg>test@gmail.com</arg>
-<msg timestamp="20221012 13:58:17.502" level="FAIL">No keyword with name 'Input Email' found. Did you mean:
-    homePage.Put In Email</msg>
-<status status="FAIL" starttime="20221012 13:58:17.502" endtime="20221012 13:58:17.503"/>
-</kw>
-<status status="FAIL" starttime="20221012 13:58:17.476" endtime="20221012 13:58:17.503"/>
-</kw>
-<status status="FAIL" starttime="20221012 13:58:12.014" endtime="20221012 13:58:17.505">No keyword with name 'Input Email' found. Did you mean:
-    homePage.Put In Email</status>
+<status status="PASS" starttime="20221106 16:04:03.812" endtime="20221106 16:04:09.760"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221012 13:58:17.509" endtime="20221012 13:58:19.704"/>
+<status status="PASS" starttime="20221106 16:04:09.763" endtime="20221106 16:04:11.883"/>
 </kw>
-<status status="FAIL" starttime="20221012 13:58:10.179" endtime="20221012 13:58:19.704"/>
+<status status="PASS" starttime="20221106 16:04:00.606" endtime="20221106 16:04:11.883"/>
 </suite>
-<status status="FAIL" starttime="20221012 13:58:10.156" endtime="20221012 13:58:19.709"/>
+<suite id="s1-s2" name="02 Click on Movie" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests\02_Click_on_Movie.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221106 16:04:11.883" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221106 16:04:11.883" endtime="20221106 16:04:13.912"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:11.883" endtime="20221106 16:04:13.912"/>
+</kw>
+<test id="s1-s2-t1" name="Click on Movie" line="12">
+<kw name="Go To Home" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221106 16:04:13.913" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221106 16:04:13.913" endtime="20221106 16:04:14.018"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1500</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221106 16:04:14.018" endtime="20221106 16:04:14.201"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:14.201" endtime="20221106 16:04:14.225"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:13.913" endtime="20221106 16:04:14.226"/>
+</kw>
+<kw name="Scroll Down And Up" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:14.226" endtime="20221106 16:04:14.245"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221106 16:04:14.246" endtime="20221106 16:04:14.645"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221106 16:04:14.645" endtime="20221106 16:04:14.934"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:14.226" endtime="20221106 16:04:14.934"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:13.912" endtime="20221106 16:04:14.935"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221106 16:04:14.938" endtime="20221106 16:04:17.071"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:11.883" endtime="20221106 16:04:17.071"/>
+</suite>
+<suite id="s1-s3" name="03 Use Logo" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests\03_Use_Logo.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221106 16:04:17.083" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221106 16:04:17.082" endtime="20221106 16:04:20.647"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:17.082" endtime="20221106 16:04:20.647"/>
+</kw>
+<test id="s1-s3-t1" name="Use Logo" line="12">
+<kw name="Go To Home" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221106 16:04:20.648" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221106 16:04:20.648" endtime="20221106 16:04:20.869"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1500</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221106 16:04:20.869" endtime="20221106 16:04:20.990"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:20.990" endtime="20221106 16:04:21.430"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:20.648" endtime="20221106 16:04:21.430"/>
+</kw>
+<kw name="Click Register Button" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${REGISTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:21.430" endtime="20221106 16:04:21.465"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${LOADINGPAGE}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20221106 16:04:21.465" endtime="20221106 16:04:26.369"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:26.371" level="INFO">Clicking element 'id:RegisterButton'.</msg>
+<status status="PASS" starttime="20221106 16:04:26.369" endtime="20221106 16:04:26.524"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:26.525" level="INFO">Clicking element 'id:Logo'.</msg>
+<status status="PASS" starttime="20221106 16:04:26.524" endtime="20221106 16:04:26.578"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:21.430" endtime="20221106 16:04:26.578"/>
+</kw>
+<kw name="Click Signup Button Logo Test" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:26.579" endtime="20221106 16:04:26.599"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${LOADINGPAGE}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20221106 16:04:26.600" endtime="20221106 16:04:26.607"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:26.607" level="INFO">Clicking element 'id:SignInButton'.</msg>
+<status status="PASS" starttime="20221106 16:04:26.607" endtime="20221106 16:04:26.647"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:26.647" level="INFO">Clicking element 'id:Logo'.</msg>
+<status status="PASS" starttime="20221106 16:04:26.647" endtime="20221106 16:04:26.679"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:26.579" endtime="20221106 16:04:26.679"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:20.647" endtime="20221106 16:04:26.680"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221106 16:04:26.681" endtime="20221106 16:04:28.826"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:17.076" endtime="20221106 16:04:28.826"/>
+</suite>
+<suite id="s1-s4" name="04 Login" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests\04_Login.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221106 16:04:28.851" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221106 16:04:28.850" endtime="20221106 16:04:33.049"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:28.850" endtime="20221106 16:04:33.049"/>
+</kw>
+<test id="s1-s4-t1" name="Login Test" line="12">
+<kw name="Go To Home" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221106 16:04:33.050" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221106 16:04:33.050" endtime="20221106 16:04:33.449"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1500</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221106 16:04:33.449" endtime="20221106 16:04:33.571"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:33.571" endtime="20221106 16:04:34.440"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:33.050" endtime="20221106 16:04:34.440"/>
+</kw>
+<kw name="Click Signup Button" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:34.441" endtime="20221106 16:04:34.465"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${LOADINGPAGE}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20221106 16:04:34.465" endtime="20221106 16:04:39.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:39.505" level="INFO">Clicking element 'id:SignInButton'.</msg>
+<status status="PASS" starttime="20221106 16:04:39.505" endtime="20221106 16:04:39.580"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:34.441" endtime="20221106 16:04:39.580"/>
+</kw>
+<kw name="Put Login" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:39.582" endtime="20221106 16:04:39.603"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>test@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:39.603" level="INFO">Typing text 'test@gmail.com' into text field 'class:css-1ml9hd4'.</msg>
+<status status="PASS" starttime="20221106 16:04:39.603" endtime="20221106 16:04:39.692"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>Test1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:39.693" level="INFO">Typing password into text field 'class:css-1ml9hd4'.</msg>
+<msg timestamp="20221106 16:04:39.716" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221106 16:04:39.755" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221106 16:04:39.693" endtime="20221106 16:04:39.755"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGINBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:39.756" level="INFO">Clicking element 'class:css-tm4dls'.</msg>
+<status status="PASS" starttime="20221106 16:04:39.756" endtime="20221106 16:04:39.828"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:39.828" endtime="20221106 16:04:39.845"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:39.582" endtime="20221106 16:04:39.845"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:33.049" endtime="20221106 16:04:39.846"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221106 16:04:39.846" endtime="20221106 16:04:43.710"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:28.836" endtime="20221106 16:04:43.710"/>
+</suite>
+<suite id="s1-s5" name="05 Go To MyMovies" source="C:\Users\brank\OneDrive\Documents\School\Testing\Testautomation_opdracht\Branko\tests\05_Go_To_MyMovies.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221106 16:04:43.717" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221106 16:04:43.717" endtime="20221106 16:04:45.272"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:43.717" endtime="20221106 16:04:45.273"/>
+</kw>
+<test id="s1-s5-t1" name="Go To My Movies" line="12">
+<kw name="Go To Home" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221106 16:04:45.274" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221106 16:04:45.274" endtime="20221106 16:04:45.357"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1500</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221106 16:04:45.358" endtime="20221106 16:04:45.527"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:45.528" endtime="20221106 16:04:45.551"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:45.274" endtime="20221106 16:04:45.551"/>
+</kw>
+<kw name="Click Signup Button" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:45.558" endtime="20221106 16:04:45.578"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${LOADINGPAGE}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20221106 16:04:45.578" endtime="20221106 16:04:50.722"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:50.723" level="INFO">Clicking element 'id:SignInButton'.</msg>
+<status status="PASS" starttime="20221106 16:04:50.723" endtime="20221106 16:04:50.790"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:45.558" endtime="20221106 16:04:50.791"/>
+</kw>
+<kw name="Put Login" library="homePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:50.791" endtime="20221106 16:04:50.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>test@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:50.811" level="INFO">Typing text 'test@gmail.com' into text field 'class:css-1ml9hd4'.</msg>
+<status status="PASS" starttime="20221106 16:04:50.811" endtime="20221106 16:04:50.897"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>Test1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:50.897" level="INFO">Typing password into text field 'class:css-1ml9hd4'.</msg>
+<msg timestamp="20221106 16:04:50.916" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221106 16:04:50.945" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221106 16:04:50.897" endtime="20221106 16:04:50.945"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGINBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:50.945" level="INFO">Clicking element 'class:css-tm4dls'.</msg>
+<status status="PASS" starttime="20221106 16:04:50.945" endtime="20221106 16:04:51.009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAV}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221106 16:04:51.009" endtime="20221106 16:04:51.031"/>
+</kw>
+<status status="PASS" starttime="20221106 16:04:50.791" endtime="20221106 16:04:51.031"/>
+</kw>
+<kw name="Go To My Movies" library="homePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:51.033" level="INFO">Clicking element 'id:Logo'.</msg>
+<status status="PASS" starttime="20221106 16:04:51.032" endtime="20221106 16:04:51.092"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MYMOVIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 16:04:51.093" level="INFO">Clicking element 'class:css-e6lcyw'.</msg>
+<msg timestamp="20221106 16:04:51.267" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221106 16:04:51.267" level="FAIL">Element with locator 'class:css-e6lcyw' not found.</msg>
+<status status="FAIL" starttime="20221106 16:04:51.093" endtime="20221106 16:04:51.267"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${MYMOVIESELEMENT}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20221106 16:04:51.267" endtime="20221106 16:04:51.267"/>
+</kw>
+<status status="FAIL" starttime="20221106 16:04:51.032" endtime="20221106 16:04:51.267"/>
+</kw>
+<status status="FAIL" starttime="20221106 16:04:45.273" endtime="20221106 16:04:51.267">Element with locator 'class:css-e6lcyw' not found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221106 16:04:51.267" endtime="20221106 16:04:53.425"/>
+</kw>
+<status status="FAIL" starttime="20221106 16:04:43.710" endtime="20221106 16:04:53.425"/>
+</suite>
+<status status="FAIL" starttime="20221106 16:04:00.584" endtime="20221106 16:04:53.425"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="01 Profiel Buy Credits">Tests.01 Profiel Buy Credits</stat>
+<stat pass="4" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="01 Profiel Buy Credits">Tests.01 Profiel Buy Credits</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="02 Click on Movie">Tests.02 Click on Movie</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="03 Use Logo">Tests.03 Use Logo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="04 Login">Tests.04 Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="05 Go To MyMovies">Tests.05 Go To MyMovies</stat>
 </suite>
 </statistics>
 <errors>

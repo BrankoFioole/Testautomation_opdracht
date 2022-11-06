@@ -9,7 +9,8 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Go To SignIn
+Use Logo
     Go To Home
-    Click Signup Button
+    Click Register Button
+    Click Signup Button Logo Test
 

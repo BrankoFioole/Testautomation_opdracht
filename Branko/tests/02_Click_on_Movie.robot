@@ -9,7 +9,6 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Go To SignIn
+Click on Movie
     Go To Home
-    Click Signup Button
-
+    Scroll Down And Up

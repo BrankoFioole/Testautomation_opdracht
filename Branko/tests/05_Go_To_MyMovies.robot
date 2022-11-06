@@ -9,7 +9,8 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Go To SignIn
+Go To My Movies
     Go To Home
     Click Signup Button
-
+    Put Login
+    Go To My Movies
