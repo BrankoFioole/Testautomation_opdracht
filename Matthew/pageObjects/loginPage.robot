@@ -12,7 +12,7 @@ ${LOGIN_BUTTON}=  id:SignInButtonComplete
 Login Profile
   Wait Until Element Is Visible  ${LOGIN_DIV}
   Input Text  ${EMAIL}  ${EMAIL_GEGEVENS}
-  Input Password  ${PASSWORD}  YBB4$M0eQMoa
+  Input Password  ${PASSWORD}  YBB8$M0eQMoe
   Click Element  ${LOGIN_BUTTON}
   Wait Until Element Is Not Visible  ${LOGIN_BUTTON}
   Wait Until Element Is Visible  ${COMEDY_MOVIES_DIV}
