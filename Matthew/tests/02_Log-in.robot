@@ -10,7 +10,7 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Test Can Go To Signin Page
+Test Can Log In
    Go To Home
    Click Signin Button
    Login Profile

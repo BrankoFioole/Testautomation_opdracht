@@ -26,3 +26,7 @@ Click Register Button
   Wait Until Element Is Visible  ${REGISTER_BUTTON}
   Click Element  ${REGISTER_BUTTON}
 
+Go To ProfilePage
+  Click Element  ${PROFILEPAGE_BUTTON}
+  Wait Until Element Is Visible  ${ADDCREDITS_BUTTON}
+
